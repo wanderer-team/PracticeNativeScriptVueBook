@@ -1,0 +1,23 @@
+// NativeScript core theme
+// @see https://docs.nativescript.org/ui/theme
+@import '~@nativescript/theme/core';
+@import '~@nativescript/theme/default';
+
+// Override variables here
+
+// Global SCSS styling
+// @see https://docs.nativescript.org/ui/styling
+
+.mdi {
+  font-family: 'Material Icons', 'MaterialIcons-Regular';
+}
+
+$primary-color: #68B9F0;
+$text-color: #000000;
+$gray1-color: #333333;
+$gray2-color: #4F4F4F;
+$gray3-color: #828282;
+$price-color: #EB5757;
+$snackbar-color: #323232;
+
+$border-radius: 4;

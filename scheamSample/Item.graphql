@@ -1,0 +1,20 @@
+type Item @model
+  @key(name: "byAdmin", fields: ["adminId", "id"]) {
+    id: ID!
+    title: String!
+    price: Int!
+    brand: String
+    maker: String
+    origin: String
+    ingredient: String
+    alcohol: Float
+    capacity: Int
+    sakeDegree: String
+    descripttion: String
+    deliveryFee: Int
+    image: String
+    delFlg: Boolean
+    adminId: ID!
+    createdAt: AWSDateTime
+    updatedAt: AWSDateTime
+  }

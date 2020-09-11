@@ -1,0 +1,11 @@
+type History @model
+  @key(name: "byUserItem", fields: ["userId", "itemId"]) {
+  id: ID!
+  userId: ID!
+  itemId: ID!
+  itemTitle: String!
+  itemPrice: Int!
+  itemCount: Int!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}

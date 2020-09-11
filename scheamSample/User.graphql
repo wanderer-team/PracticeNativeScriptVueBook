@@ -1,0 +1,9 @@
+type User @model {
+  id: ID!
+  name: String!
+  birthday: AWSDate!
+  addresses: [Address] @connection(keyName: "byUser", fields: ["id"])
+  histories: [History] @connection(keyName: "byUserItem", fields: ["id"])
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}

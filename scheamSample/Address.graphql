@@ -1,0 +1,9 @@
+type Address @model
+  @key(name: "byUser", fields: ["userId", "id"]) {
+  id: ID!
+  zipCode: Int
+  address: String
+  building: String
+  recipient: String
+  userId: ID!
+}

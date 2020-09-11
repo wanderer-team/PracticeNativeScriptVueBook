@@ -1,0 +1,9 @@
+type Cart @model
+  @key(name: "byUserItem", fields: ["userId", "itemId"]) {
+  id: ID!
+  userId: ID!
+  itemId: ID!
+  count: Int
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}

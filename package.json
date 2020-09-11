@@ -1,0 +1,73 @@
+{
+  "name": "practice-nativescript-vue-book",
+  "version": "1.0.0",
+  "description": "実践 Vue.jsでスマホ アプリをつくろう 〜NativeScript-Vue×AWS Amplifyで ECアプリをリリースしよう〜のサンプルコードです。",
+  "author": "wanderer",
+  "license": "MIT",
+  "nativescript": {
+    "id": "org.wanderer.p-ns-vue-book.test001",
+    "templateVersion": "v2",
+    "tns-ios": {
+      "version": "6.5.0"
+    },
+    "tns-android": {
+      "version": "6.5.0"
+    }
+  },
+  "scripts": {
+    "debug": "tns run android --bundle --device test",
+    "clean": "tns platform remove android",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nativescript/theme": "^2.2.1",
+    "aws-amplify": "^3.0.23",
+    "moment": "^2.27.0",
+    "nativescript-carousel": "^6.1.1",
+    "nativescript-datetimepicker": "^1.2.2",
+    "nativescript-drop-down": "^5.0.6",
+    "nativescript-material-icons": "^1.0.3",
+    "nativescript-material-snackbar": "^3.2.19",
+    "nativescript-socketio": "^3.3.1",
+    "nativescript-toasty": "^3.0.0-alpha.2",
+    "nativescript-vue": "^2.6.1",
+    "nativescript-vue-devtools": "^1.4.0",
+    "nativescript-vue-fonticon": "^1.0.3",
+    "tns-core-modules": "^6.5.1",
+    "vuex": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-traverse": "6.26.0",
+    "babel-types": "6.26.0",
+    "babylon": "6.18.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-hot-loader": "^1.4.2",
+    "css-loader": "^1.0.0",
+    "eslint": "^7.6.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "lazy": "1.0.11",
+    "mini-css-extract-plugin": "^0.4.1",
+    "nativescript-dev-webpack": "^1.5.1",
+    "nativescript-vue-template-compiler": "^2.6.0",
+    "nativescript-worker-loader": "~0.11.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^7.3.1",
+    "tns-platform-declarations": "6.5.0",
+    "uglifyjs-webpack-plugin": "~1.2.7",
+    "vue-loader": "^15.9.1",
+    "webpack": "^4.16.4",
+    "webpack-bundle-analyzer": "~2.13.1",
+    "webpack-cli": "^3.1.0"
+  }
+}

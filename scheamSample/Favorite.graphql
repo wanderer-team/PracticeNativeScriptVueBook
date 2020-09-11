@@ -1,0 +1,8 @@
+type Favorite @model
+  @key(name: "byUserItem", fields: ["userId", "itemId"]) {
+  id: ID!
+  userId: ID!
+  itemId: ID!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
